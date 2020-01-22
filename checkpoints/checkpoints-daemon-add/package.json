@@ -1,0 +1,23 @@
+{
+  "name": "checkpoint_generator",
+  "version": "1.0.0",
+  "description": "This NodeJS utility generates the current checkpoints.csv file for synchronizing with the Zent Cash network.",
+  "main": "checkpoint_generator.js",
+  "dependencies": {
+    "export-to-csv": "^0.2.1",
+    "turtlecoin-rpc": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node checkpoint_generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZentCashFoundation/tools-blockchain/tree/master/checkpoints/checkpoints-daemon-add"
+  },
+  "keywords": [
+    "crypto"
+  ],
+  "author": "ZentCashFoundation",
+  "license": "MIT"
+}
