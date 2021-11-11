@@ -39,7 +39,7 @@ for (let i = 0; i < height; i += checkpointEveryBlocks){
 	console.log("Getting block info for height " + i);
 	const blockHash = await daemon.blockHeaderByHeight(i)
 	console.log(blockHash.hash);
-	checkpoints.push(new Checkpoint('{'+ i + ',' + ' '  + '\"' + blockHash.hash + '\"' + '};'));
+	checkpoints.push(new Checkpoint('{'+ i + ',' + ' '  + '\"' + blockHash.hash + '\"' + '},'));
 }
 
   console.log("Checkpoints:\n" + JSON.stringify(checkpoints, false , 7));
